@@ -1,0 +1,51 @@
+html, body {
+	height: 100%;
+	background-color: #fff9f2; 
+	font-family: Helvetica, Monospace;
+}
+#accessbar{
+	float: left;
+	top:50px;
+	width: 15%;
+	font-family: Helvetica, Monospace;
+	margin-top: 10%;
+	
+}
+
+li{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	list-style-type: none;
+	border-color: #FFA73F;
+	
+}
+li a{
+	text-decoration: none;
+}
+
+#log{
+	height: 5%;
+	background-color: #6699CC;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right:0;
+}
+#searchbar{
+	height: 12%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 0.5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position:fixed;
+  right: 0;
+}
+

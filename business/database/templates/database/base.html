@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'database/style.css' %}">
+  <head>
+    <meta charset="utf-8">
+    <title>Company F</title>
+  </head>
+  <body>
+    <div id = icon>
+      <img src = "">
+    </div>
+    <div id = accessbar>
+      <ul>
+        <li><a href = "/database/welcome">Home</a></li>
+        <li><a href = "/database/about">About</a></li>
+        <li><a href = "/database/contact">Contact Us</a></li>
+        <li><a href = "/database/ask">Search</a></li>
+      </ul>
+    </div>
+    <div id = log>
+     <form action = "/admin">
+      <button type="submit">Login</button>
+     </form>
+    </div>
+    <div id = searchbar> 
+     {%block trazi%}{%endblock%}
+    </div>
+    <div id = tally>{% block tijelo%}{%endblock%}</div>
+    <div id = return></div>
+  </body>
+</html>

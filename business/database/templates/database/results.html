@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+{% extends 'database/base.html' %}
+<html>
+  <head>
+  </head>
+  <body>
+    {%block tijelo%}
+     <div class = personname>
+     	{{persona}}
+     </div>
+     <div class = clock>
+      {%if answers%}
+      	<ul>
+        {% for i in answers%}
+          {{i.entry}} {{i.leaving}}
+        </ul>
+        {%endfor%}
+      {%else%}
+        <p>This person was never in the building.<p>
+      {%endif%}
+     </div>
+    {%endblock%}
+  </body>
+</html>
